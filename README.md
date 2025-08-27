@@ -36,6 +36,11 @@ npm install
 # Ejecutar en modo desarrollo
 npm run dev
 
+```
+### Instalación del Backend
+
+```bash
+
 # Navegar a la carpeta backend
 cd backend
 
