@@ -35,3 +35,31 @@ npm install
 
 # Ejecutar en modo desarrollo
 npm run dev
+
+# Navegar a la carpeta backend
+cd backend
+
+# Crear entorno virtual
+python -m venv venv
+
+# Activar entorno virtual
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Aplicar migraciones
+python manage.py migrate
+
+# Crear usuario de prueba
+python manage.py shell
+# Dentro del shell:
+from django.contrib.auth.models import User
+User.objects.create_user(username='carlosandresmoreno', password='90122856_Hanz', first_name='Carlos', last_name='Moreno', email='carlos@example.com')
+exit()
+
+# Ejecutar servidor backend
+python manage.py runserver 8010
